@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap');
+
+:root {
+	--verde1: #82e0aa;
+	--verde2: #2ecc71;
+	--gray1: #ffffff80;
+	--gray2: #f7d9d990;
+	--black1: #1a1b1f;
+	--black2: #30353b;
+	--shadow: 0 8px 8px;
+	--color_shadow: #00000033;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 30px 0;
+	height: auto;
+}
+
+.container-modifier {
+	width: 60%;
+}
+
+.hero {
+	width: 100%;
+	min-height: 200px;
+	background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+}
+
+.nav_hero {
+	color: #fff;
+	height: 70px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav_container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: inherit;
+	padding: 0;
+}
+
+.logo_name {
+	font-size: 26px;
+}
+.logo_name:hover {
+	color: var(--verde1);
+}
+.point {
+	color: var(--verde1);
+}
+
+.hero_main {
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.title {
+	width: 60%;
+	margin-left: 75px;
+	font-size: 56px;
+	font-weight: 300;
+	color: #fff;
+}
+
+.title_active {
+	color: #fff;
+	font-weight: 700;
+}
+
+.copy {
+	font-size: 24px;
+	color: var(--gray1);
+	text-shadow: var(--shadow) var(--color_shadow);
+	margin: 15px 0;
+}
+
+.copy_active {
+	font-weight: 700;
+}
+
+/* Services */
+
+.services {
+	background: #e4e4e4;
+}
+
+.subtitle {
+	font-size: 42px;
+}
+
+.subtitle-modifier {
+	text-align: center;
+	margin-bottom: 16px;
+}
+
+.copy_section {
+	display: flex;
+	justify-content: center;
+	color: var(--black2);
+	font-size: 22px;
+	line-height: 32px;
+	margin-bottom: 60px;
+}
+
+.copy_section-modifier {
+	text-align: center;
+	margin-bottom: 32px;
+}
+
+.container-cards {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	width: 30%;
+	padding: 30px 0;
+	overflow: hidden;
+	background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+	border-radius: 10px;
+	position: relative;
+	text-align: right;
+	margin-bottom: 60px;
+	box-shadow: 0 0 6px var(--color_shadow);
+}
+.card-cadastro {
+	width: 100%;
+	padding: 30px 0;
+	overflow: hidden;
+	background: linear-gradient(180deg, var(--black2) 0%, var(--black1) 100%);
+	border-radius: 10px;
+	position: relative;
+	text-align: right;
+	margin-bottom: 60px;
+	box-shadow: 0 0 6px var(--color_shadow);
+}
+
+.cards_text {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card_list {
+	color: var(--verde1);
+	font-weight: 700;
+	margin: 25px 0 12px;
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card_title {
+	font-size: 40px;
+	color: #fff;
+	margin-bottom: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.card_copy {
+	color: var(--gray1);
+	margin: 16px 72px;
+	border-radius: 10px;
+	background-color: #fff;
+	opacity: 90%;
+}
+.container-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	margin-left: 300px;
+	margin-top: -75px;
+}
+.container-form1 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 900px;
+	margin: 10px;
+	padding: 10px;
+}
+.container-form2 {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 900px;
+	margin: 10px;
+	padding: 10px;
+}
+.container-form label {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.container-form input {
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+
+.container-btn {
+	display: grid;
+	grid-template-rows: 50px;
+	margin-top: 30px;
+	margin-left: 20px;
+	width: 50%;
+}
+
+@media screen and (max-width: 900px) {
+	.title {
+		font-size: 50px;
+	}
+	.copy {
+		font-size: 22px;
+	}
+
+	.container-cards {
+		justify-content: space-evenly;
+	}
+	.services .card {
+		width: 45%;
+	}
+	.background {
+		width: 52%;
+	}
+	.card {
+		width: 42%;
+	}
+}
